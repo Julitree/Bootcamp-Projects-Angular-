@@ -1,0 +1,53 @@
+{
+    "name": "boilerplate-upgrade",
+    "version": "0.0.0",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e"
+    },
+    "private": true,
+    "husky": {
+        "hooks": {
+            "pre-commit": "ng lint && ng test"
+        }
+    },
+    "dependencies": {
+        "@angular/animations": "~11.2.13",
+        "@angular/common": "~11.2.13",
+        "@angular/compiler": "~11.2.13",
+        "@angular/core": "~11.2.13",
+        "@angular/forms": "~11.2.13",
+        "@angular/platform-browser": "~11.2.13",
+        "@angular/platform-browser-dynamic": "~11.2.13",
+        "@angular/router": "~11.2.13",
+        "@briebug/jest-schematic": "^3.1.0",
+        "rxjs": "~6.6.0",
+        "tslib": "^2.0.0",
+        "zone.js": "~0.11.3"
+    },
+    "devDependencies": {
+        "@angular-builders/jest": "11.2.0",
+        "@angular-devkit/build-angular": "~0.1102.12",
+        "@angular-eslint/builder": "4.3.0",
+        "@angular-eslint/eslint-plugin": "4.3.0",
+        "@angular-eslint/eslint-plugin-template": "4.3.0",
+        "@angular-eslint/schematics": "4.3.0",
+        "@angular-eslint/template-parser": "4.3.0",
+        "@angular/cli": "~11.2.12",
+        "@angular/compiler-cli": "~11.2.13",
+        "@types/jest": "26.0.23",
+        "@types/node": "^12.11.1",
+        "@typescript-eslint/eslint-plugin": "4.16.1",
+        "@typescript-eslint/parser": "4.16.1",
+        "eslint": "^7.6.0",
+        "husky": "^6.0.0",
+        "jest": "26.6.3",
+        "protractor": "~7.0.0",
+        "ts-node": "~8.3.0",
+        "typescript": "~4.1.5"
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/_mixins';
+@import '../../../../styles/_responsive';
+footer {
+    background: $fourth-color;
+    height: 60px;
+    @include flexBox;
+    @include respond-to(tablet) {
+        height: 100px;
+    }
+    p {
+        color: $sixth-color;
+    }
+    ul {
+        width: 28%;
+        @include flexBox($justify-content: space-evenly);
+        padding-left: 20px;
+        list-style: none;
+        li {
+            height: 23px;
+            @include respond-to(tablet) {
+                height: 23px;
+            }
+            @include respond-to(desktop) {
+                height: 30px;
+            }
+            img {
+                height: 100%;
+            }
+        }
+    }
+}

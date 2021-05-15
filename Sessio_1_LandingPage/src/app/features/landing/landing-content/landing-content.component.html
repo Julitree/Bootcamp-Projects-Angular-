@@ -1,0 +1,55 @@
+<section>
+    <article class="articleOne gridContainer">
+        <div class="articleOne__container-Img">
+            <img src="{{contentOne?.src}}" alt="{{contentOne?.alt}}">
+        </div>
+        <div class="articleOne__container-Info">
+            <h2 class="title">{{contentOne?.title}}</h2>
+            <p class="info">{{contentOne?.content}}</p>
+        </div>
+    </article>
+    <article class="articleOne gridContainer">
+        <div class="articleOne__container-Img contenTwo">
+            <img src="{{contentTwo?.src}}" alt="{{contentTwo?.alt}}">
+        </div>
+        <div class="articleOne__container-Info ImgcontenTwo">
+            <h2 class="title">{{contentTwo?.title}}</h2>
+            <p class="info">{{contentTwo?.content}}</p>
+        </div>
+    </article>
+</section>
+<!--Content Second-->
+<section class="bg-primary-color">
+    <article class="articleOne ">
+        <div class="articleOne__container-Info bg-primary-color">
+            <h2 class="title">{{contentTwo?.title}}</h2>
+            <p class="info">{{contentTwo?.content}}</p>
+        </div>
+    </article>
+    <div class="cards-blogs_wrapper">
+        <article class="card-blog_container">
+            <div class="card-blog__img-container">
+                <img src="{{articleBlogTwo?.src}}" alt="{{articleBlogTwo?.alt}}">
+            </div>
+            <h2>{{articleBlogTwo?.title}}</h2>
+            <p>{{articleBlogTwo?.contentOne}}</p>
+            <button>{{articleBlogTwo?.contentTwo}}</button>
+        </article>
+        <article class="card-blog_container">
+            <div class="card-blog__img-container">
+                <img src="{{articleBlogOne?.src}}" alt="{{articleBlogOne?.alt}}">
+            </div>
+            <h2>{{articleBlogOne?.title}}</h2>
+            <p>{{articleBlogOne?.contentOne}}</p>
+            <button>{{articleBlogOne?.contentTwo}}</button>
+        </article>
+        <article class="card-blog_container">
+            <div class="card-blog__img-container">
+                <img src="{{articleBlogThree?.src}}" alt="{{articleBlogThree?.alt}}">
+            </div>
+            <h2>{{articleBlogThree?.title}}</h2>
+            <p>{{articleBlogThree?.contentOne}}</p>
+            <button>{{articleBlogThree?.contentTwo}}</button>
+        </article>
+    </div>
+</section>

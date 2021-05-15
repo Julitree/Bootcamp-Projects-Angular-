@@ -1,0 +1,55 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/_mixins';
+@import '../../../../styles/_responsive';
+header {
+    background: $secundary-color;
+    color: white;
+    height: 50px;
+    @include respond-to(tablet) {
+        height: 70px;
+    }
+    nav {
+        @include flexBox($justify-content: space-between);
+        height: 100%;
+        padding: 0 30px;
+        .logoContainer {
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 5px 10px;
+            color: $fifth-color;
+            border: 1px solid $fifth-color;
+            @include respond-to(tablet) {
+                padding: 5px 10px;
+                font-size: 1.1rem;
+            }
+        }
+        p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .btn-menu-mobile {
+            font-size: 1.6rem;
+            @include respond-to('tablet') {
+                display: none;
+            }
+        }
+        ul {
+            display: none;
+            justify-content: flex-end;
+            list-style: none;
+            @include respond-to('tablet') {
+                display: flex;
+            }
+            li {
+                padding: 15px;
+                @include respond-to('tablet') {
+                    font-size: 1.1rem;
+                }
+                @include respond-to('desktop') {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

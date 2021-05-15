@@ -1,0 +1,21 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/_mixins';
+@import '../../../../styles/_responsive';
+section {
+    background: $fourth-color;
+    .about-container {
+        padding: 10%;
+        min-height: 300px;
+        color: $third-color;
+        @include flexBox($direction: column);
+        @include respond-to(tablet) {
+            padding: 5% 10%;
+            h1 {}
+            p {
+                font-size: 1.2rem;
+                line-height: 2.4rem;
+                padding-top: 18px;
+            }
+        }
+    }
+}

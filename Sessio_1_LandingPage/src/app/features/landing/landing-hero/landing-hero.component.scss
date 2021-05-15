@@ -1,0 +1,19 @@
+@import '../../../../styles/colors';
+@import '../../../../styles/responsive';
+.hero {
+    position: relative;
+    .hero__img-container {
+        height: 300px;
+        width: 100%;
+        @include respond-to(tablet) {
+            height: 500px;
+        }
+        @include respond-to(desktop) {
+            height: 676px;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
